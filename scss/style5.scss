@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --colorTitulos: #ffa500;
+    --colortextos: #ffffff;
+    --colorbotones: #ffa500;
+    --colorfondo: #000;
+    --paddingsecciones: 60px 0;
+    --marginelementos: 40px;
+
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: var(--paddingsecciones);
+}
+
+/* Menu */
+
+.menu-navegacion {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: #000;
+}
+
+.logo {
+    height: 100px;
+}
+
+.logo img {
+    display: block;
+    height: 100%;
+    width: auto;
+    margin-left: 50px;
+}
+
+.enlaces li {
+    list-style: none;
+    display: inline-block;
+}
+
+.enlaces a {
+    text-decoration: none;
+    color: #ffff;
+    padding-left: 15px;
+}
+
+
+
+@media screen and (max-width:800px) {
+    .menu-navegacion {
+        flex-direction: column;
+        height: 120px;
+        justify-content: space-evenly;
+        margin-top: 1px;
+    }
+}
+
+
+/*main*/
+
+
+main {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/WhatsApp\ Image\ 2023-06-09\ at\ 14.55.10.jpeg);
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorPrincipal {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rosybrown;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: auto;
+    padding: 30px;
+}
+
+.inputNombre {
+    margin-bottom: 20px;
+}
+
+.inputEmail {
+    margin-bottom: 20px;
+}
+
+.inputPais {
+    margin-bottom: 20px;
+}
+
+.formulario-contacto h1 {
+    margin-bottom: 20px;
+}
+
+.datos {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedorComentarios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rosybrown;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: auto;
+    padding: 30px;
+}
+
+.contenedorComentarios form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contenedorComentarios h1 {
+    margin-bottom: 20px;
+}
+
+.contenedorComentarios p {
+    margin-bottom: 20px;
+}
+
+.contenedorComentarios textarea {
+    margin-bottom: 10px;
+}
+
+.contenedorComentarios input {
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #ffa500;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+footer {
+    background-color: #000;
+    color: #ffffff;
+    text-align: center;
+}
